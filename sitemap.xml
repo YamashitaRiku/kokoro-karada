@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- トップページ -->
+  <url>
+    <loc>https://yamashitariku.github.io/kokoro-karada/</loc>
+    <lastmod>2025-11-19</lastmod>
+  </url>
+
+  <!-- 代表ページ（index.html のプロフィール部分） -->
+  <url>
+    <loc>https://yamashitariku.github.io/kokoro-karada/#profile</loc>
+    <lastmod>2025-11-19</lastmod>
+  </url>
+
+  <!-- 料金ページ -->
+  <url>
+    <loc>https://yamashitariku.github.io/kokoro-karada/#price</loc>
+    <lastmod>2025-11-19</lastmod>
+  </url>
+
+  <!-- よくある質問 -->
+  <url>
+    <loc>https://yamashitariku.github.io/kokoro-karada/#faq</loc>
+    <lastmod>2025-11-19</lastmod>
+  </url>
+
+  <!-- サッカー療育 -->
+  <url>
+    <loc>https://yamashitariku.github.io/kokoro-karada/#soccer</loc>
+    <lastmod>2025-11-19</lastmod>
+  </url>
+
+  <!-- 外部講師サービス -->
+  <url>
+    <loc>https://yamashitariku.github.io/kokoro-karada/#lecture</loc>
+    <lastmod>2025-11-19</lastmod>
+  </url>
+
+</urlset>
