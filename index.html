@@ -36,6 +36,70 @@
     .qr img{width:220px;height:auto;border-radius:12px;border:1px solid #e5e7eb;padding:6px;background:#fff}
     .cta-band{background:linear-gradient(90deg,#e0f2fe,#ccfbf1);border:1px solid #bae6fd;padding:16px;border-radius:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
     footer{padding:28px 18px;color:#6b7280;font-size:.9rem}
+    /* 料金カード全体 */
+.price-section{
+  padding: 20px;
+}
+
+.price-section h2{
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.price-card{
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.price-card h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2b78e4;
+}
+
+.price-amount{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price-note{
+  font-size: 14px;
+  color: #666;
+}
+
+/* グループ料金用 */
+.group-price-row{
+  display:flex;
+  justify-content:space-between;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.gp-amount{
+  font-weight: bold;
+  color: #2b78e4;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px){
+  .price-amount{
+    font-size: 24px;
+  }
+  .price-card{
+    padding: 16px;
+  }
+  .group-price-row{
+    font-size: 16px;
+  }
+  .gp-amount{
+    font-size: 18px;
+  }
+}
   </style>
 </head>
 <body>
@@ -102,26 +166,47 @@
     </div>
   </section>
 
-  <section class="container" id="price">
-    <h2>料金</h2>
-    <div class="card">
-      <div class="price">
-        <div class="head">コース</div><div class="head">時間</div><div class="head">料金</div><div class="head">内容</div>
-        <div class="row">初回体験</div><div class="row">60分</div><div class="row">2,000円</div><div class="row">ヒアリング＋安全チェック＋軽い運動体験</div>
-        <div class="row">通常コース</div><div class="row">60分</div><div class="row">4,000円 / 回</div><div class="row">個別目標に沿ったマンツーマン指導</div>
-        <div class="row">回数券（8回）</div><div class="row">60分 × 8回</div><div class="row">8回（合計30,000円）</div><div class="row">継続効果と習慣化におすすめ</div>
-      </div>
-      <p style="color:#6b7280;margin-top:10px">※ 交通費・施設利用料は実費をご負担いただく場合があります。</p>
-      <div class="cta-band" style="margin-top:12px">
-        <strong>まずは初回体験（2,000円）から。LINEなら最短1分で予約完了！</strong>
-        <div>
-          <a class="btn line" href="https://lin.ee/FiDmvhCU" target="_blank" rel="noopener">LINEで体験予約する</a>
-          <a class="btn alt" href="https://forms.gle/JyCNCwwfXNkXDtBX8" target="_blank" rel="noopener">申込フォームを開く</a>
-        </div>
-      </div>
-    </div>
-  </section>
+ <section class="price-section">
+  <h2>料金</h2>
 
+  <div class="price-card">
+    <h3>🔰 初回体験</h3>
+    <p class="price-amount">2,000円</p>
+    <p class="price-note">（60分）</p>
+  </div>
+
+  <div class="price-card">
+    <h3>🏃‍♂️ 通常コース</h3>
+    <p class="price-amount">4,000円 / 回</p>
+    <p class="price-note">（60分）</p>
+  </div>
+
+  <div class="price-card">
+    <h3>🎫 回数券（8回）</h3>
+    <p class="price-amount">30,000円</p>
+    <p class="price-note">（1回あたり 3,750円）</p>
+  </div>
+
+  <div class="price-card">
+    <h3>👥 グループ料金</h3>
+
+    <div class="group-price-row">
+      <span>3〜10名</span>
+      <span class="gp-amount">10,000円</span>
+    </div>
+    <div class="group-price-row">
+      <span>11〜15名</span>
+      <span class="gp-amount">15,000円</span>
+    </div>
+    <div class="group-price-row">
+      <span>16〜20名</span>
+      <span class="gp-amount">20,000円</span>
+    </div>
+
+    <p class="price-note">※ 60分 / 出張形式</p>
+  </div>
+
+</section>
   <section class="container" id="faq">
     <h2>よくある質問</h2>
     <div class="card">
